@@ -17,7 +17,7 @@ $("ul").on("click", "li", function () {
     $(this).toggleClass("completed")
 });
 
-//click on X to delete todo
+//click on trash icon to delete todo
 $("ul").on("click", "span", function (event) {
     $(this).parent().fadeOut(500, function () {
         $(this).remove();   // this refer to li not the span
